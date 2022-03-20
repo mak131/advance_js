@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tree</title>
+</head>
+<body>
+    <p id="first">First Topic is dom introduction</p>
+    <p id="second">Javascript</p>
+    
+    <p id="third">I am learning Advance Javascript
+        <span>And Today's Date 19022022</span>
+        <em>First Topic is dom introduction</em>
+        <span>Hello World</span>
+
+    </p>
+    <p>2st p inside div
+        <span>Hello</span>
+    </p>
+    <script>
+        //more specific  
+        //var getSpan = document.getElementById('third');
+        //var res = getSpan.getElementsByTagName('span'); 
+            //both are same
+        var result = document.getElementById('third').getElementsByTagName('span'); //this method is used to access a tag, such as span tag is inside the p tag 
+         
+        document.write(result);
+        console.log(result);
+    </script>
+</body>
+</html>
+       

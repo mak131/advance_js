@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>querySelector</title>
+</head>
+<body>
+    <h1>querySelector</h1>
+    <h1 class="mak myclass">querySelector</h1>
+    <p class="mak">querySelector</p>
+    <p id="second">Javascript</p>
+    <div>
+        <em class="mak">I am learning Advance Javascript</em>
+    </div>
+    <p id="third">I am learning Advance Javascript
+        <span>And Today's Date 09032022</span>
+        <em>First Topic is dom introduction</em>
+        <span class="mak">Hello World</span>
+        <b>Hello</b>
+    
+
+    </p>
+    <p id="second1">Javascript Advance</p>
+    
+    <p class="mak ptag">2st p inside div
+        <span>Hello</span>
+    </p>
+    <script>
+
+        //Class Selector
+        var res = document.querySelector('.mak, .myclass');// first come first out
+        document.write(res);
+        console.log(res);
+
+
+        //This method querySelector return the first Element match of the specified selector, or group of selector. if no matches are found , null is returned.
+    </script>
+    
+</body>
+</html>

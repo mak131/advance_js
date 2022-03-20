@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>querySelectorAll</title>
+</head>
+<body>
+   <h1>querySelector</h1>
+   <h1 class="mak myclass">querySelector</h1>
+   <p class="mak">querySelector</p>
+   <p id="second">Javascript</p>
+   <div>
+       <em class="mak">I am learning Advance Javascript</em>
+   </div>
+   <p id="third">I am learning Advance Javascript
+       <span>And Today's Date 09032022</span><br>
+       <em>First Topic is dom introduction</em><br>
+       <p class="mak">I am learning Advance Javascript<span class="myclass">Hello World</span>
+       <b>Hello</b></p>
+   </p>
+   <div id="forth">I am learning Advance Javascript
+       <span>And Today's Date 09032022</span><br>
+       <em>First Topic is dom introduction</em><br>
+       <p class="mak">I am learning Advance Javascript<span class="myclass">Hello World</span>
+       <b>Hello</b></p>
+   </div>
+   <p id="second1">Javascript Advance</p>
+   <p>Javascript Advance2222222222</p>
+   
+   <p class="mak ptag">2st p inside div
+       <span>Hello</span>
+   </p>
+   <div id="second">I am Something div</div>
+
+   <script>
+       // length
+       
+       var len = document.querySelectorAll(".mak").length;
+       document.write(len)
+       console.log(len)
+        
+       //or Both Same
+       var data = document.querySelectorAll(".mak");
+       var len = data.length;
+       document.write(len + "<br>")
+       console.log(data)
+
+   </script>
+</body>
+</html>

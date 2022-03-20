@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tree</title>
+</head>
+<body>
+    <p id="first">First Topic is dom introduction</p>
+    <p id="second">Javascript</p>
+    
+    <p id="third">I am learning Advance Javascript
+        <span>And Today's Date 19022022</span>
+        <em>First Topic is dom introduction</em>
+        <span>Hello World</span>
+        <b>Hello</b>
+
+    </p>
+    <p>2st p inside div
+        <span>Hello</span>
+    </p>
+    <script>
+        //more specific  
+        //var getSpan = document.getElementById('third');
+        //var res = getSpan.getElementsByTagName('*'); 
+            //both are same
+        var result = document.getElementById('third').getElementsByTagName('*'); //this method is used to Everyone has to access whatever is inside p tag 
+         
+        document.write(result);
+        console.log(result);
+    </script>
+</body>
+</html>
+       

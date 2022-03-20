@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tree</title>
+</head>
+<body>
+    <h1 id="sho">I am learning Advance Javascript</h1>
+    <h2>And Today's Date 19022022</h2>
+    <p id="first">First Topic is dom introduction</p>
+    <p id="second">Javascript</p>
+    <div>
+        <p>1st p inside div</p>
+        <p>2st p inside div</p>
+    </div>
+    <script>
+        //getElementsByTagName()
+        //var res = document.getElementsByTagName('p'); //this method is used to access using tag name
+
+        //var res = document.getElementsByTagName('*');//this method is used to access all Element those are available in whole page using * 
+
+        var res = document.body.getElementsByTagName('*');//this method is used to access all Element those are available in body tag using * 
+        document.write(res);
+        console.log(res);
+    </script>
+</body>
+</html>

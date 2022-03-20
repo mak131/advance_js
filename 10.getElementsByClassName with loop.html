@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title class="mak">Tree</title>
+</head>
+<body>
+    <p class="mak">getElementsByClasName</p>
+    <p id="second">Javascript</p>
+    <div>
+        <em class="mak">I am learning Advance Javascript</em>
+    </div>
+    <p id="third">I am learning Advance Javascript
+        <span>And Today's Date 09032022</span>
+        <em>First Topic is dom introduction</em>
+        <span class="mak">Hello World</span>
+        <b>Hello</b>
+
+    </p>
+    <p class="mak ptag">2st p inside div
+        <span>Hello</span>
+    </p>
+    <script>
+        //loop
+        //eg 1
+        loop = document.getElementsByClassName('mak')[0];
+        document.write(loop +"<br>");
+        console.log(loop); //this method is used to access using index method
+        //for loop
+        var data= document.getElementsByClassName('mak');
+        var len = data.length;
+        for(let i=0;i<len;i++ ){
+            var result = document.getElementsByClassName('mak')[i];
+            document.write(result +"<br>");
+            console.log(result);
+            
+ //this method is used to accsess class name using for loop
+        }
+    </script>
+        
+</body>
+</html>
+       

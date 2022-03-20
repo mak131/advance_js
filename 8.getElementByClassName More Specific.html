@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title class="mak">Tree</title>
+</head>
+<body>
+    <p class="mak">getElementsByClasName</p>
+    <p id="second">Javascript
+        <span class="2ndclass"> second class access using more specific</span>
+    </p>
+    <div>
+        <em class="ptag">I am learning Advance Javascript</em>
+    </div>
+    <p id="third">I am learning Advance Javascript
+        <span>And Today's Date 19022022</span>
+        <em>First Topic is dom introduction</em>
+        <span class="mak">Hello World</span>
+        <b>Hello</b>
+
+    </p>
+    <p class="mak ptag">2st p inside div
+        <span>Hello</span>
+    </p>
+    <script>
+        //getElementsByClassName
+        //eg 1
+       
+        var data = document.getElementById('third');
+        var res = data.getElementsByClassName('mak'); //this method is used to access classname
+        document.write(res);
+        console.log(res);
+        document.write('<br>');
+        // or both are same
+        var result = document.getElementById('second').getElementsByClassName('2ndclass');
+        document.write(result);
+        console.log(result);
+            
+    </script>
+        
+</body>
+</html>
+       
