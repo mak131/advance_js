@@ -1,0 +1,29 @@
+<!--lastChild: lastChild includeing non element nodes like text and comment nodes whitespace inside elements is considered as text and text is considered as nodes.
+lastElementChild: includes only element node(no whitespace,text node and comment node) -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Trans</title>
+</head>
+<body id="myid">
+   <h1 id="myid1"><!--This is Comment--><span>I am Learning Javascript</span>
+    <em>hello</em>
+
+    </h1>
+   <p id="mak1">this is paragraph tag</p>
+   <p id="mak2">Javascript<span>hello world</span></p>
+
+    <script>
+        //lastChild vs lastElementChild
+
+        var result = document.getElementById("myid1");
+        //console.log(result.lastChild); //this method is used to access last element with non element 
+        console.log(result.lastElementChild); //this method is used to access last element without non element 
+
+        //document.write(result.lastElementChild.textContent)
+        //var re = result.lastElementChild.textContent = "I am Learning Dom"  //this method is used to change textContent
+        //document.write(re)
+
+    </script>
+</body>
+</html>

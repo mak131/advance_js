@@ -1,0 +1,27 @@
+<!--firstChild: firstChild includeing non element nodes like text and comment nodes whitespace inside elements is considered as text and text is considered as nodes.
+firstElementChild: includes only element node(no whitespace,text node and comment node) -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Trans</title>
+</head>
+<body>
+   <h1 id="myid1"><!--This is Comment--><span>I am Learning Javascript</span>
+    </h1>
+   <p id="mak1">this is paragraph tag</p>
+   <p id="mak2">Javascript<span>hello world</span></p>
+
+    <script>
+        //firstChild vs firstElementChild
+
+        var result = document.getElementById("myid1");
+        //console.log(result.firstChild); //this method is used to access first element with non element 
+        //console.log(result.firstElementChild); //this method is used to access first element without non element 
+
+        //document.write(result.firstElementChild.textContent)
+        var re = result.firstElementChild.textContent = "I am Learning Dom" //this method is used to change textContent
+        document.write(re)
+
+    </script>
+</body>
+</html>

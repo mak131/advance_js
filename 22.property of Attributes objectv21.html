@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>querySelectorAll</title>
+</head>
+<body>
+   <h1>querySelector</h1>
+   <h1 class="mak myclass">querySelector</h1>
+   <p class="mak">querySelectors</p>
+   <p id="second" class="mak">Javascript</p>
+
+   <script>
+       // Attributes Properties name , value
+
+       var result = document.getElementById("second");
+       document.write( result.attributes.length); //using this find no. of attributes
+       document.write( result.attributes[0].nodeName + " = ");// access attributes name
+       document.write( result.attributes[0].nodeValue + "<br>");
+       document.write( result.attributes[1].nodeName + " = ");
+       document.write( result.attributes[1].nodeValue + "<br>");
+
+       for (let i = 0;i<result.attributes.length;i++){
+           document.write(result.attributes[i].Name + "<br>");//using future
+           document.write(result.attributes[i].Value);
+       }
+    
+   </script>
+</body>
+</html>

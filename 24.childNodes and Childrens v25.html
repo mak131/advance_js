@@ -1,0 +1,26 @@
+<!--child: childNode includeing non element nodes like text and comment nodes whitespace inside elements is considered as text and text is considered as nodes.
+children: includes only element node(no whitespace,text node and comment node) -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Trans</title>
+</head>
+<body id="myid">
+   <h1 id="myid1"><!--This is Comment--> I am Learning Javascript></h1>
+   <p id="mak1">this is paragraph tag</p>
+   <p id="mak2">Javascript<span>hello world</span></p>
+
+    <script>
+        //childNodes vs children
+
+        //var result = document.getElementById("myid");
+         //using this access id
+        //console.log(result.childNodes);// access childNodes
+
+        var result = document.getElementById("mak2");
+         //using this access id
+        console.log(result.children);// access children
+
+    </script>
+</body>
+</html>
